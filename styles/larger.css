@@ -24,4 +24,14 @@
     .navigation a {
         border: none;
     }
+
+    .split {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+    }
+
+    .cousre div{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
 }

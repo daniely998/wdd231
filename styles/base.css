@@ -75,10 +75,36 @@ header span {
     background-color: #E07A5F;
 }
 
-/*  */
+/* MAIN */
+main {
+    margin: auto 10px;
+    display: flex;
+    flex-direction: column;
+}
+
 h1 {
-    margin-left: 10px;
     color: #3D405B;
+}
+
+h2 {
+    text-align: center;
+}
+
+.photo {
+    text-align: center;
+}
+
+.photo img {
+    width: 250px;
+}
+
+input {
+    width: 100px;
+    margin-left: 10px;
+}
+
+.course {
+    text-align: center;
 }
 
 /* FOOTER */

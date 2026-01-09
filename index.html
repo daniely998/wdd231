@@ -16,6 +16,7 @@
         <link rel="stylesheet" href="styles/larger.css">
 
         <script src="scripts/navigation.js" defer></script>
+        <script src="scripts/index.js" defer></script>
     </head>
     <body>
         <header>
@@ -32,14 +33,24 @@
         </nav>
         <main>
             <h1>Home</h1>
-            <section>
-                <h2>About Me</h2>
-            </section>
-            <section>
-                <h2>Student Photo</h2>
-            </section>
-            <section>
+            <div class="split">
+                <section class="about">
+                    <h2>About Me</h2>
+                    <p>My name is Daniel Yim. I am from Hong Kong. Currently studying Software Development in BYU-Pathway.</p>
+                </section>
+                <section class="photo">
+                    <h2>Student Photo</h2>
+                    <img src="images/profile.webp" alt="student photo">
+                </section>
+            </div>
+            <section class="course">
                 <h2>Web Certificate Courses</h2>
+                <div class="buttons">
+                    <input type="button" value="All" id="all">
+                    <input type="button" value="CSE" id="cse">
+                    <input type="button" value="WDD" id="wdd">
+                </div>
+                <div class="courselist"></div>
             </section>
         </main>
         <footer>
