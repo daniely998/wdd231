@@ -30,10 +30,11 @@ header span {
 .hamburger {
     background: none;
     border: none;
-    /* color: ; */
+    color: #000;
     cursor: pointer;
     font-size: 2rem;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: none;
 }
 
 .hamburger::before {
