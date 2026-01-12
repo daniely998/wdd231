@@ -1,0 +1,23 @@
+{
+    "family_name": "Yim",
+    "move_in_date": "2025-3-14",
+    "number_in_family": 3,
+    "visited_by_bishopric": false,
+    "family_members": [
+        {
+            "name": "Julie Yim",
+            "gender": "Female",
+            "birthdate": "19XX-9-16"
+        },
+        {
+            "name": "Chong Yim",
+            "gender": "Male",
+            "birthdate": "19XX-2-10"
+        },
+        {
+            "name": "Daniel Yim",
+            "gender": "Male",
+            "birthdate": "1998-9-25"
+        }
+    ]
+}
