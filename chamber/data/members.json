@@ -1,0 +1,58 @@
+[
+    {
+        "name": "Nestle Hong Kong",
+        "address": "7/F Manhattan Place, 23 Wang Tai Road, Kowloon Bay, Kowloon, Hong Kong",
+        "phone": "2859 6333",
+        "url": "https://www.nestle.com.hk/en",
+        "image": "images/nestle.webp",
+        "level": 3
+    },
+    {
+        "name": "La Casa Management Co Ltd",
+        "address": "Unit 18, 8F, Block B, Merit Industrial Centre, 94 To Kwa Wan Road, To Kwa Wan, Kowloon, Hong Kong",
+        "phone": "3565 5708",
+        "url": "https://lacasacatering.com",
+        "image": "images/la-casa.webp",
+        "level": 2
+    },
+    {
+        "name": "The Peninsula",
+        "address": "Salisbury Road, Kowloon, Hong Kong",
+        "phone": "2920 2888",
+        "url": "https://www.peninsula.com/en/hong-kong/5-star-luxury-hotel-kowloon",
+        "image": "images/peninsula.webp",
+        "level": 3
+    },
+    {
+        "name": "The Green Earth",
+        "address": "Unit 1701, 17/F, PeakCastle, No. 476 Castle Peak Road, Kowloon, Hong Kong ",
+        "phone": "3708 8380",
+        "url": "https://greenearth.org.hk",
+        "image": "images/green-earth.webp",
+        "level": 2
+    },
+    {
+        "name": "Vitasoy International Holdings Ltd",
+        "address": "6 Ho Tin Street, Tuen Mun, New Territories, Hong Kong",
+        "phone": "2468 9645",
+        "url": "https://www.vitasoy.com",
+        "image": "images/vitasoy.webp",
+        "level": 2
+    },
+    {
+        "name": "Baguio Green Group Ltd",
+        "address": "Unit A, 4/F, Dragon Industrial Building, No. 93 King Lam Street, Lai Chi Kok, Kowloon, Hong Kong",
+        "phone": "2541 3388",
+        "url": "https://www.baguio.com.hk/en/",
+        "image": "images/baguio-green.webp",
+        "level": 1
+    },
+    {
+        "name": "Inno-Sports Concept Management Ltd",
+        "address": "Shop G27, GO PARK Sai Sha, New Territories, Hong Kong",
+        "phone": "3168 2528",
+        "url": "https://www.goparksaisha.hk",
+        "image": "images/inno-sports.webp",
+        "level": 1
+    }
+]
