@@ -78,6 +78,12 @@ header span {
     background-color: lightblue;
 }
 
+/* MENU */
+.menu {
+    text-align: center;
+    margin: 0.5rem;
+}
+
 /* CARDS */
 .grid {
 	display: grid;
