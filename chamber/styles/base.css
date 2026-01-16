@@ -78,7 +78,11 @@ header span {
     background-color: lightblue;
 }
 
-/* MENU */
+/* MAIN */
+h1 {
+    text-align: center;
+}
+
 .menu {
     text-align: center;
     margin: 0.5rem;
