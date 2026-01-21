@@ -52,16 +52,18 @@ displayForecast();
 // SPOTLIGHT
 const display = document.querySelector('.spotlight');
 
-const fetchMember = () => {
-    return fetch('data/members.json');
-}
-
 async function displayMember() {
     display.innerHTML = "";
-    const response = await fetchMember();
+    const response = await fetch('data/members.json');
     const data = await response.json();
-    members = data;
-    members.forEach((member) => {
+
+    const filterMembers = data.filter(member =>
+        member.level === 2 || member.level === 3
+    );
+    const random = filterMembers.sort(() => 0.5 - Math.random());
+    const spotlightMembers = random.slice(0, 3);
+
+    spotlightMembers.forEach((member) => {
         let card = document.createElement('section');
         let name = document.createElement('h2');
         let address = document.createElement('p');
