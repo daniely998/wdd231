@@ -88,6 +88,7 @@ h1 {
     margin: 0.5rem;
 }
 
+/* HOME */
 .hero {
     position: relative;
 }
@@ -104,17 +105,22 @@ h1 {
     right: 5%;
 }
 
+.event, .current-weather, .forecast {
+    border: solid thin;
+    margin: 0.3rem;
+    padding-left: 1rem;
+}
+
 /* CARDS */
-.grid {
+.grid, .spotlight {
 	display: grid;
 	grid-gap: 0.5rem;
 	grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     text-align: center;
 }
 
-.grid section {
+.grid section, .spotlight section {
     background-color: #ddd;
-    /* border: thin solid; */
 }
 
 .list {
@@ -124,7 +130,6 @@ h1 {
 
 .list section {
     display: grid;
-    /* grid-gap: 0.5rem; */
     grid-template-columns: 1.75fr 2fr 0.75fr 2fr;
 }
 

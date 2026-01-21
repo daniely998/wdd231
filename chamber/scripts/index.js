@@ -1,12 +1,13 @@
+// WEATHER
 const currentWeather = document.querySelector('.current-weather');
 const forecast = document.querySelector('.forecast');
 
-const fetchData = (url) => {
+const fetchWeather = (url) => {
     return fetch(url);
 }
 
 async function displayWeather() {
-    const response = await fetchData('https://api.openweathermap.org/data/2.5/weather?lat=22.33&lon=114.16&units=metric&appid=d51bd02fc76df6b1c37275628296cc7e');
+    const response = await fetchWeather('https://api.openweathermap.org/data/2.5/weather?lat=22.33&lon=114.16&units=metric&appid=d51bd02fc76df6b1c37275628296cc7e');
     const data = await response.json();
     console.log(data);
 
@@ -28,7 +29,7 @@ async function displayWeather() {
 displayWeather();
 
 async function displayForecast() {
-    const response = await fetchData('https://api.openweathermap.org/data/2.5/forecast?lat=22.33&lon=114.16&units=metric&appid=d51bd02fc76df6b1c37275628296cc7e');
+    const response = await fetchWeather('https://api.openweathermap.org/data/2.5/forecast?lat=22.33&lon=114.16&units=metric&appid=d51bd02fc76df6b1c37275628296cc7e');
     const data = await response.json();
     console.log(data);
 
@@ -47,3 +48,49 @@ async function displayForecast() {
 }
 
 displayForecast();
+
+// SPOTLIGHT
+const display = document.querySelector('.spotlight');
+
+const fetchMember = () => {
+    return fetch('data/members.json');
+}
+
+async function displayMember() {
+    display.innerHTML = "";
+    const response = await fetchMember();
+    const data = await response.json();
+    members = data;
+    members.forEach((member) => {
+        let card = document.createElement('section');
+        let name = document.createElement('h2');
+        let address = document.createElement('p');
+        let phone = document.createElement('p');
+        let url = document.createElement('p');
+        let level = document.createElement('p');
+        let image = document.createElement('img');
+
+        name.textContent = `${member.name}`;
+        address.textContent = `Address: ${member.address}`;
+        phone.textContent = `Phone Number: ${member.phone}`;
+        url.textContent = `Website: ${member.url}`;
+        level.textContent = `Membership Level: ${member.level}`;
+
+        image.setAttribute('src', member.image);
+        image.setAttribute('alt', `${member.name}`);
+        image.setAttribute('loading', 'lazy');
+        image.setAttribute('width', '250');
+        image.setAttribute('height', '290');
+
+        card.appendChild(name);
+        card.appendChild(address);
+        card.appendChild(phone);
+        card.appendChild(url);
+        card.appendChild(level);
+        card.appendChild(image);
+
+        display.appendChild(card);
+    });
+}
+
+displayMember();
