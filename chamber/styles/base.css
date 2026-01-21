@@ -88,6 +88,22 @@ h1 {
     margin: 0.5rem;
 }
 
+.hero {
+    position: relative;
+}
+
+.hero img {
+    width: 100%;
+}
+
+.hero button {
+    position: absolute;
+    width: 100px;
+    height: 30px;
+    bottom: 5%;
+    right: 5%;
+}
+
 /* CARDS */
 .grid {
 	display: grid;
