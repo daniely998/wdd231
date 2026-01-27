@@ -104,7 +104,7 @@ WDDcourses.addEventListener("click", () => {
 function createCourseList(courses) {
 	document.querySelector(".courselist").innerHTML = "";
 	courses.forEach(course => {
-		let subject = document.createElement("p");
+		let subject = document.createElement("button");
 
         if (course.completed === true)
         {
