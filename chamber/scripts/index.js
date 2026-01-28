@@ -58,7 +58,7 @@ async function displayMember() {
     const data = await response.json();
 
     const filterMembers = data.filter(member =>
-        member.level === 2 || member.level === 3
+        member.level === "Silver" || member.level === "Gold"
     );
     const random = filterMembers.sort(() => 0.5 - Math.random());
     const spotlightMembers = random.slice(0, 3);

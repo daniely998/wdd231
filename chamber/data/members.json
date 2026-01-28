@@ -5,7 +5,7 @@
         "phone": "2859 6333",
         "url": "https://www.nestle.com.hk/en",
         "image": "images/nestle.webp",
-        "level": 3
+        "level": "Gold"
     },
     {
         "name": "La Casa Management Co Ltd",
@@ -13,7 +13,7 @@
         "phone": "3565 5708",
         "url": "https://lacasacatering.com",
         "image": "images/la-casa.webp",
-        "level": 2
+        "level": "Silver"
     },
     {
         "name": "The Peninsula",
@@ -21,7 +21,7 @@
         "phone": "2920 2888",
         "url": "https://www.peninsula.com/en/hong-kong/5-star-luxury-hotel-kowloon",
         "image": "images/peninsula.webp",
-        "level": 3
+        "level": "Gold"
     },
     {
         "name": "The Green Earth",
@@ -29,7 +29,7 @@
         "phone": "3708 8380",
         "url": "https://greenearth.org.hk",
         "image": "images/green-earth.webp",
-        "level": 2
+        "level": "Silver"
     },
     {
         "name": "Vitasoy International Holdings Ltd",
@@ -37,7 +37,7 @@
         "phone": "2468 9645",
         "url": "https://www.vitasoy.com",
         "image": "images/vitasoy.webp",
-        "level": 2
+        "level": "Silver"
     },
     {
         "name": "Baguio Green Group Ltd",
@@ -45,7 +45,7 @@
         "phone": "2541 3388",
         "url": "https://www.baguio.com.hk/en/",
         "image": "images/baguio-green.webp",
-        "level": 1
+        "level": "Bronze"
     },
     {
         "name": "Inno-Sports Concept Management Ltd",
@@ -53,6 +53,6 @@
         "phone": "3168 2528",
         "url": "https://www.goparksaisha.hk",
         "image": "images/inno-sports.webp",
-        "level": 1
+        "level": "Bronze"
     }
 ]
