@@ -44,7 +44,25 @@
             </nav>
         </div>
         <main>
-
+            <form method="GET" action="thankyou.html">
+                <label>First Name <input type="text" required name="first" title="Your First Name" autocomplete="given-name"></label>
+                <label>Last Name <input type="text" required name="last" title="Your Last Name" autocomplete="family-name"></label>
+                <label>Organizational Title <input type="text" name="title" title="Your Organizational Title" autocomplete="organization-title" pattern="[A-Za-z\-\s]{7,}"></label>
+                <label>Email Address <input type="email" required name="email" title="Your Email Address" autocomplete="email" placeholder="johnsmith@gmail.com"></label>
+                <label>Phone Number <input type="tel" required name="phone" title="Your Phone Number" autocomplete="tel"></label>
+                <label>Organization Name <input type="text" required name="org-name" title="Your Organization's Name" autocomplete="organization"></label>
+                <label>Membership Level
+                    <select name="membership" required>
+                        <option value="np">Non Profit</option>
+                        <option value="bronze">Bronze</option>
+                        <option value="silver">Silver</option>
+                        <option value="gold">Gold</option>
+                    </select>
+                </label>
+                <label>Organization Description <textarea title="Your Organization's Description" name="description"></textarea></label>
+                <label><input type="hidden" name="timestamp" id="timestamp"></label>
+                <label><input type="submit" value="Send Application"></label>
+            </form>
         </main>
         <div class="bottom">
             <footer>
