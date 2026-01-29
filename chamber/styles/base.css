@@ -195,6 +195,18 @@ form {
     }
 }
 
+@keyframes fadeColor {
+    0% {
+        background-color: lightblue;
+    }
+    50% {
+        background-color: lightgreen;
+    }
+    100% {
+        background-color: lightblue;
+    }
+}
+
 .join-card {
     display: flex;
     flex-direction: column;
@@ -205,6 +217,9 @@ form {
     align-items: center;
     height: 150px;
     margin: 1rem;
+    animation-name: fadeColor;
+    animation-iteration-count: infinite;
+    animation-duration: 4s;
 }
 
 .join-card button {
