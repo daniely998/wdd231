@@ -195,6 +195,10 @@ input[type=submit] {
     appearance: none;
 }
 
+#form-main div h2 {
+    text-align: center;
+}
+
 @keyframes fadeColor {
     0% {
         background-color: lightblue;
