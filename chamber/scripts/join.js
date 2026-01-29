@@ -1,3 +1,9 @@
+const timestamp = document.querySelector("#timestamp");
+
+window.addEventListener("DOMContentLoaded", () => {
+    timestamp.value = Date().toString();
+})
+
 const npOpen = document.querySelector("#np-op");
 const bronzeOpen = document.querySelector("#bronze-op");
 const silverOpen = document.querySelector("#silver-op");
