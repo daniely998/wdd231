@@ -1,7 +1,7 @@
 const timestamp = document.querySelector("#timestamp");
 
 window.addEventListener("DOMContentLoaded", () => {
-    timestamp.value = Date().toString();
+    timestamp.value = Date().toLocaleString();
 })
 
 const npOpen = document.querySelector("#np-op");
