@@ -54,6 +54,7 @@
                 <label>Organization Name <input type="text" required name="org-name" title="Your Organization's Name" autocomplete="organization"></label>
                 <label>Membership Level
                     <select name="membership" required>
+                        <option disabled selected value="">Select</option>
                         <option value="np">Non Profit</option>
                         <option value="bronze">Bronze</option>
                         <option value="silver">Silver</option>
@@ -62,7 +63,7 @@
                 </label>
                 <label>Organization Description <textarea title="Your Organization's Description" name="description"></textarea></label>
                 <label><input type="hidden" name="timestamp" id="timestamp"></label>
-                <label><input type="submit" value="Send Application" href="thankyou.html"></label>
+                <label><input type="submit" value="Send Application"><a href="thankyou.html"></a></label>
             </form>
             <div>
                 <h1>Membership Levels</h1>
