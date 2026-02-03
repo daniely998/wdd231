@@ -1,0 +1,23 @@
+:root {
+    --onyx: #000f08ff;
+    --jet-black: #1c3738ff;
+    --charcoal: #4d4847ff;
+    --mint-cream: #f4fff8ff;
+    --cool-steel: #8baaadff;
+}
+
+* {
+    font-family: "Playwrite NZ Basic", cursive;
+    box-sizing: border-box;
+    margin: 0;   
+}
+
+header, footer {
+    background-color: var(--jet-black);
+    color: var(--mint-cream);
+}
+
+main {
+    background-color: var(--cool-steel);
+    color: var(--onyx);
+}
