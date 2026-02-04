@@ -259,9 +259,12 @@ input[type=submit] {
     grid-area: name;
 }
 
+.places-card figure {
+    grid-area: image;
+}
+
 .places-card img {
     width: 100%;
-    grid-area: image;
     object-fit: cover;
 }
 
