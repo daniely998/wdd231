@@ -121,6 +121,7 @@ h1 {
 
 .grid section, .spotlight section {
     background-color: #ddd;
+    border-radius: 8px;
 }
 
 .list {
@@ -216,7 +217,7 @@ input[type=submit] {
     flex-direction: column;
     background-color: lightblue;
     border: 1px solid #999;
-    border-radius: 4px;
+    border-radius: 8px;
     justify-content: center;
     align-items: center;
     height: 150px;
@@ -229,6 +230,53 @@ input[type=submit] {
 .join-card button {
     width: 100px;
     height: 30px;
+}
+
+/* DISCOVER */
+#places {
+    display: grid;
+    grid-gap: 0.5rem;
+    text-align: center;
+    margin: 1rem;
+}
+
+.places-card {
+    background-color: #ddd;
+    padding: 0.5rem;
+    border: 1px solid #000;
+    border-radius: 8px;
+
+    display: grid;
+    grid-template-areas:
+    "name"
+    "image"
+    "location"
+    "description"
+    "button";
+}
+
+.places-card h2 {
+    grid-area: name;
+}
+
+.places-card img {
+    width: 100%;
+    grid-area: image;
+    object-fit: cover;
+}
+
+.places-card p {
+    grid-area: description;
+}
+
+.places-card address {
+    grid-area: location;
+}
+
+.places-card button {
+    grid-area: button;
+    width: 100px;
+    justify-self: center;
 }
 
 /* FOOTER */

@@ -1,6 +1,5 @@
 @media only screen and (min-width: 38rem) {
     header, main, nav, footer {
-        max-width: 1100px;
         margin: 0 auto;
     }
 
@@ -40,8 +39,30 @@
         grid-template-columns: 2fr 1fr 1fr;
     }
 
+    .grid {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
     #form-main {
         display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .places-card {
+        grid-template-areas:
+        "image name"
+        "image location"
+        "image description"
+        "image button";
+    }
+
+    .places-card img {
+        width: 300px;
+    }
+}
+
+@media only screen and (min-width: 64rem) {
+    #places {
         grid-template-columns: 1fr 1fr;
     }
 }
