@@ -1,3 +1,4 @@
+// Places
 import {places} from '../data/places.mjs';
 
 const display = document.querySelector('#places');
@@ -22,3 +23,38 @@ function displayItems(data) {
 }
 
 displayItems(places)
+
+// Welcome Message
+const welcome = document.querySelector("#welcome");
+const msToDays = 86400000;
+
+let lastVisit = window.localStorage.getItem("lastVisit");
+
+const today = Date.now();
+
+
+let daysDif = 0;
+if (lastVisit !== null) {
+    daysDif = Math.floor((today - lastVisit) / msToDays);
+}
+
+welcomeMessage();
+
+function welcomeMessage() {
+    let message;
+    if (lastVisit == null) {
+        message = "Welcome! Let us know if you have any questions.";
+    }
+    else if (daysDif < 1) {
+        message = "Back so soon! Awesome!";
+    }
+    else  if (daysDif === 1) {
+        message = `You last visited 1 day ago.`;
+    }
+    else {
+        message = `You last visited ${daysDif} days ago.`;
+    }
+    welcome.textContent = message;
+}
+
+localStorage.setItem("lastVisit", today);

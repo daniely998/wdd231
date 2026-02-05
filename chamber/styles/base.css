@@ -233,6 +233,10 @@ input[type=submit] {
 }
 
 /* DISCOVER */
+#welcome {
+    text-align: center;
+}
+
 #places {
     display: grid;
     grid-gap: 0.5rem;
@@ -279,6 +283,7 @@ input[type=submit] {
 .places-card button {
     grid-area: button;
     width: 100px;
+    height: 30px;
     justify-self: center;
 }
 
