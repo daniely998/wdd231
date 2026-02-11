@@ -1,0 +1,52 @@
+:root {
+    --onyx: #000f08ff;
+    --jet-black: #1c3738ff;
+    --charcoal: #4d4847ff;
+    --mint-cream: #f4fff8ff;
+    --cool-steel: #8baaadff;
+}
+
+* {
+    font-family: "Playwrite NZ Basic", cursive;
+    box-sizing: border-box;
+}
+
+header, footer {
+    background-color: var(--jet-black);
+    color: var(--mint-cream);
+}
+
+main {
+    background-color: var(--cool-steel);
+    color: var(--onyx);
+}
+
+/* FOOTER */
+footer {
+    padding: 1rem 10px;
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+    column-gap: 8px;
+}
+
+.social a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border: #ccc solid 1px;
+    border-radius: 22px;
+}
+
+.social img {
+    width: 22px;
+    height: 22px;
+}
+
+.social a:hover {
+    background-color: #ddd;
+}
