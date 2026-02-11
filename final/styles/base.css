@@ -9,16 +9,13 @@
 * {
     font-family: "Playwrite NZ Basic", cursive;
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 .top, footer {
     background-color: var(--jet-black);
     color: var(--mint-cream);
-}
-
-main {
-    background-color: var(--cool-steel);
-    color: var(--onyx);
 }
 
 /* HEADER */
@@ -93,9 +90,24 @@ header span {
     background-color: var(--mint-cream);
 }
 
+/* MAIN */
+main {
+    background-color: var(--cool-steel);
+    color: var(--onyx);
+}
+
+h1 {
+    text-align: center;
+    margin: 0;
+}
+
 /* FOOTER */
 footer {
     padding: 1rem 10px;
+}
+
+footer div p {
+    margin: 1rem;
 }
 
 .social {
@@ -122,3 +134,5 @@ footer {
 .social a:hover {
     background-color: #ddd;
 }
+
+/* HOME */
