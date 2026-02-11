@@ -11,7 +11,7 @@
     box-sizing: border-box;
 }
 
-header, footer {
+.top, footer {
     background-color: var(--jet-black);
     color: var(--mint-cream);
 }
@@ -19,6 +19,78 @@ header, footer {
 main {
     background-color: var(--cool-steel);
     color: var(--onyx);
+}
+
+/* HEADER */
+header {
+    display: grid;
+    grid-template-columns: 24px auto 44px;
+    padding: 5px 0 5px 10px;
+    align-items: end;
+    column-gap: 8px;
+}
+
+header img {
+    display: block;
+    width: 100%;
+    height: auto;
+    padding-bottom: 5px;
+}
+
+header span {
+    font-size: 1.2rem;
+    padding-bottom: 3px;
+}
+
+/* HAMBURGER */
+.hamburger {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 2rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.hamburger::before {
+    color: var(--mint-cream);
+    content: "\2630";
+}
+
+.hamburger.show::before {
+    color: var(--mint-cream);
+    content: "\00d7";
+}
+
+/* NAVIGATION */
+.navigation {
+    display: none;
+}
+
+.navigation.show {
+    display: block;
+}
+
+.navigation ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navigation a {
+    display: block;
+    padding: .8rem 10px;
+    color: var(--mint-cream);
+    text-decoration: none;
+}
+
+.navigation li.current a {
+    color: var(--onyx);
+    background-color: var(--mint-cream);
+}
+
+.navigation a:hover {
+    color: var(--onyx);
+    background-color: var(--mint-cream);
 }
 
 /* FOOTER */
