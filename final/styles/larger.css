@@ -32,4 +32,10 @@
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
     }
+    
+    /* FORM */
+    form {
+        width: 250px;
+        margin: 1rem auto 0;
+    }
 }

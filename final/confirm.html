@@ -25,7 +25,7 @@
 
         <script src="scripts/navigation.js" defer></script>
         <script src="scripts/footer.js" defer></script>
-        <script src="scripts/join.js" defer></script>
+        <script src="scripts/confirm.js" defer></script>
 </head>
 <body>
     <div class="top">
@@ -38,21 +38,13 @@
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="discover.html">Discover</a></li>
-                <li class="current"><a href="#">Join</a></li>
+                <li class="current"><a href="join.html">Join</a></li>
             </ul>
         </nav>
     </div>
     <main id="join-main">
-        <h1>Join the Club</h1>
-        <form method="GET" action="confirm.html">
-            <label>First Name <input type="text" required name="first" title="Your First Name" autocomplete="given-name"></label>
-            <label>Last Name <input type="text" required name="last" title="Your Last Name" autocomplete="family-name"></label>
-            <label>Email Address <input type="email" required name="email" title="Your Email Address" autocomplete="email" placeholder="johnsmith@gmail.com"></label>
-            <label>Phone Number <input type="tel" required name="phone" title="Your Phone Number" autocomplete="tel"></label>
-            <label>About Yourself <textarea title="Your Organization's Description" name="description"></textarea></label>
-            <label><input type="hidden" name="timestamp" id="timestamp"></label>
-            <label><input type="submit" value="Send Application"><a href="confirm.html"></a></label>
-        </form>
+        <h1>Thank You</h1>
+        <div id="results"></div>
     </main>
     <footer>
         <div>
