@@ -137,6 +137,19 @@ footer div p {
 
 /* HOME */
 
+/* DISCOVER */
+#book {
+	display: grid;
+	grid-gap: 0.5rem;
+	grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    text-align: center;
+}
+
+#book section {
+    border: solid 1px #000;
+    border-radius: 8px;
+}
+
 /* FORM */
 form {
     margin: 1rem 2%;
