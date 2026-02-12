@@ -20,7 +20,6 @@ async function displayItems() {
             <p>Author: ${book.author}</p>
             <p>Publish Date: ${book.publish_date}</p>
             <p>ISBN: ${book.ISBN}</p>
-            <button>Learn more</button>
             `;
 
             display.appendChild(card);

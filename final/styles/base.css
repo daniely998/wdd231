@@ -98,7 +98,7 @@ main {
 
 h1 {
     text-align: center;
-    margin: 0;
+    margin: 0 0 1rem;
 }
 
 /* FOOTER */
@@ -145,9 +145,19 @@ footer div p {
     text-align: center;
 }
 
-#book section {
+.book-card {
     border: solid 1px #000;
     border-radius: 8px;
+    padding: 1rem;
+    margin: 10px;
+}
+
+.book-card h2 {
+    margin-bottom: 10px;
+}
+
+.book-card p {
+    margin-top: 5px;
 }
 
 /* FORM */
