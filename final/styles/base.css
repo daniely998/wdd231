@@ -110,6 +110,10 @@ footer div p {
     margin: 1rem;
 }
 
+footer a {
+    color: var(--mint-cream);
+}
+
 .social {
     display: flex;
     justify-content: center;
