@@ -32,6 +32,12 @@
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
     }
+
+    /* HOME */
+    #home-sub {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
     
     /* FORM */
     form {

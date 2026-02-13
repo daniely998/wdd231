@@ -136,6 +136,24 @@ footer div p {
 }
 
 /* HOME */
+#home-main img {
+    width: 100%;
+}
+
+#home-sub div {
+    border: solid 1px var(--onyx);
+    border-radius: 8px;
+    padding: 1rem;
+    margin: 10px;
+}
+
+#home-sub h2 {
+    margin-bottom: 10px;
+}
+
+#home-sub p {
+    margin-top: 5px;
+}
 
 /* DISCOVER */
 #book {
@@ -146,7 +164,7 @@ footer div p {
 }
 
 .book-card {
-    border: solid 1px #000;
+    border: solid 1px var(--onyx);
     border-radius: 8px;
     padding: 1rem;
     margin: 10px;

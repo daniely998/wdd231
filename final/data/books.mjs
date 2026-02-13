@@ -1,4 +1,4 @@
-[
+export const books = [
     {
         "title": "Hong Kong in the Rain",
         "author": "Margaret Ng Ngoi Yee",
