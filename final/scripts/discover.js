@@ -2,11 +2,7 @@ import {books} from '../data/books.mjs';
 
 const display = document.querySelector('#book');
 
-const fetchData = () => {
-    return fetch('data/books.json');
-}
-
-async function displayItems(data) {
+function displayItems(data) {
     data.forEach(book => {
         let card = document.createElement('section');
         card.className = 'book-card';
