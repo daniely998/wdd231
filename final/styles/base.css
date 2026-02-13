@@ -136,6 +136,12 @@ footer div p {
 }
 
 /* HOME */
+#welcome {
+    text-align: center;
+    padding: 20px;
+    font-size: x-large;
+}
+
 #home-main img {
     width: 100%;
 }

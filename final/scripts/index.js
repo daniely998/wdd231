@@ -1,3 +1,4 @@
+// prompt
 const prompt = document.querySelector('#prompt');
 
 const fetchWord = () => {
@@ -21,3 +22,25 @@ async function displayWord() {
 }
 
 displayWord();
+
+// welcome message
+const welcome = document.querySelector("#welcome");
+
+let lastVisit = window.localStorage.getItem("lastVisit");
+
+const visited = true;
+
+welcomeMessage();
+
+function welcomeMessage() {
+    let message;
+    if (lastVisit == null) {
+        message = "Hello and Welcome! Free feel to explore!";
+    }
+    else {
+        message = "Welcome back! What are you looking for?";
+    }
+    welcome.textContent = message;
+}
+
+localStorage.setItem("lastVisit", visited);
