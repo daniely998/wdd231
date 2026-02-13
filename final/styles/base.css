@@ -179,6 +179,31 @@ footer div p {
 }
 
 /* FORM */
+#info {
+    text-align: center;
+}
+
+#openModal {
+    padding: 8px;
+}
+
+#modal {
+    background-color: white;
+    border: 1px solid var(--onyx);
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgb(0 0 0 / 50%);
+    margin: auto;
+    padding: 1rem;
+}
+
+#modal p {
+    margin: 1rem;
+}
+
+#closeModal {
+    padding: 4px;
+}
+
 form {
     margin: 1rem 2%;
 }

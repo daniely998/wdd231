@@ -44,6 +44,13 @@
     </div>
     <main id="join-main">
         <h1>Join the Club</h1>
+        <div id="info">
+            <button id="openModal">Why Join</button>
+            <dialog id="modal">
+                <div></div>
+                <button id="closeModal">Close</button>
+            </dialog>
+        </div>
         <form method="GET" action="confirm.html">
             <label>First Name <input type="text" required name="first" title="Your First Name" autocomplete="given-name"></label>
             <label>Last Name <input type="text" required name="last" title="Your Last Name" autocomplete="family-name"></label>
@@ -52,7 +59,7 @@
             <label>About Yourself <textarea title="Your Organization's Description" name="description"></textarea></label>
             <label><input type="hidden" name="timestamp" id="timestamp"></label>
             <label><input type="submit" value="Send Application"><a href="confirm.html"></a></label>
-        </form>
+        </form>    
     </main>
     <footer>
         <div>
